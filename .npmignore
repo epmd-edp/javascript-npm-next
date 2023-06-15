@@ -1,0 +1,10 @@
+/*
+!.next/
+!build/
+!node/app/
+node/app/.npm/
+!package.json
+!server.js
+!README*
+!CHANGELOG*
+!LICENSE*
