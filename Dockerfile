@@ -1,4 +1,4 @@
-FROM node:19.8.1-alpine
+FROM node:20.8.0-alpine
 WORKDIR /app
 ENV NODE_ENV production
 RUN addgroup --system --gid 1001 nodejs && \
