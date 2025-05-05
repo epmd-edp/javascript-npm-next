@@ -1,12 +1,12 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:coverage": "echo Mock stage test:coverage"
   },
   "dependencies": {
     "react": "^19.0.0",
