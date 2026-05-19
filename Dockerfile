@@ -1,5 +1,5 @@
 # Use official Node.js Alpine image
-FROM node:22.15.0-alpine3.21
+FROM node:26.2.0-alpine3.23
 
 # Set working directory
 WORKDIR /app
@@ -16,7 +16,7 @@ RUN addgroup --system --gid 1001 nodejs && \
 # Copy only necessary files from standalone build
 COPY --chown=nextjs:nodejs .next/standalone ./
 COPY --chown=nextjs:nodejs .next/static .next/static/
-COPY --chown=nextjs:nodejs public/ public/  
+COPY --chown=nextjs:nodejs public/ public/
 
 # Use non-root user
 USER nextjs
